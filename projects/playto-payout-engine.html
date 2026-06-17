@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>
+Play-to-Payout Engine | Konireddy Manoj Kumar Reddy
+</title>
+
+<link rel="stylesheet" href="../style.css">
+
+</head>
+
+<body>
+
+<section class="hero">
+
+<h1>Play-to-Payout Engine</h1>
+
+<h2>Merchant Payout Processing Platform</h2>
+
+<p class="hero-role">
+Django • DRF • PostgreSQL • Celery • Redis • React
+</p>
+
+<p>
+A FinTech backend system that simulates real-world
+merchant payout processing with ledger accounting,
+idempotency protection, background workers,
+transaction management, and reliable payout workflows.
+</p>
+
+<div class="buttons">
+
+<a href="https://github.com/manoj-konireddy/playto-payout-engine"
+target="_blank"
+class="btn">
+
+View GitHub
+
+</a>
+
+<a href="../index.html"
+class="btn secondary">
+
+Back To Portfolio
+
+</a>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Project Overview</h2>
+
+<div class="project-overview">
+
+<p>
+
+Play-to-Payout Engine is a backend-focused FinTech
+platform designed to simulate how modern payment
+companies process merchant payouts.
+
+The system manages merchant balances, payout requests,
+background processing, retries, and transaction
+tracking while maintaining financial consistency and
+preventing duplicate payout execution.
+
+The architecture demonstrates many of the patterns
+used in production-grade financial systems.
+
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Problem Statement</h2>
+
+<div class="project-overview">
+
+<p>
+
+Financial systems must process payouts safely while
+protecting merchant balances, preventing duplicate
+transactions, and handling failures gracefully.
+
+Traditional implementations can suffer from
+concurrency issues, race conditions, duplicate
+requests, and inconsistent balances.
+
+This project was built to demonstrate how reliable
+backend systems solve these challenges using
+transaction management, background processing,
+idempotency, and ledger-based accounting.
+
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>How It Works</h2>
+
+<ul class="features">
+
+<li>
+Merchant submits a payout request through the API.
+</li>
+
+<li>
+The system validates the request and verifies
+available balance.
+</li>
+
+<li>
+Funds are reserved using ledger operations.
+</li>
+
+<li>
+A payout transaction record is created.
+</li>
+
+<li>
+The request is pushed into a Redis-backed queue.
+</li>
+
+<li>
+Celery workers process payouts asynchronously.
+</li>
+
+<li>
+Transaction status is continuously updated.
+</li>
+
+<li>
+Successful payouts update balances and ledgers.
+</li>
+
+<li>
+Failed payouts trigger retry workflows.
+</li>
+
+<li>
+Results are displayed through monitoring endpoints
+and dashboards.
+</li>
+
+</ul>
+
+</section>
+
+<section>
+
+<h2>System Architecture</h2>
+
+<div class="architecture-box">
+
+Merchant Dashboard
+
+<br><br>↓<br><br>
+
+REST API
+
+<br><br>↓<br><br>
+
+Django Backend
+
+<br><br>↓<br><br>
+
+PostgreSQL Database
+
+<br><br>↓<br><br>
+
+Redis Queue
+
+<br><br>↓<br><br>
+
+Celery Workers
+
+<br><br>↓<br><br>
+
+Payout Processing Engine
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Payout Lifecycle</h2>
+
+<div class="architecture-box">
+
+Payout Requested
+
+<br><br>↓<br><br>
+
+Pending
+
+<br><br>↓<br><br>
+
+Processing
+
+<br><br>↓<br><br>
+
+Completed
+
+<br><br>
+
+OR
+
+<br><br>
+
+Failed
+
+<br><br>↓<br><br>
+
+Retry Mechanism
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Technology Stack</h2>
+
+<div style="text-align:center;">
+
+<span class="skill-pill">Python</span>
+
+<span class="skill-pill">Django</span>
+
+<span class="skill-pill">Django REST Framework</span>
+
+<span class="skill-pill">PostgreSQL</span>
+
+<span class="skill-pill">Celery</span>
+
+<span class="skill-pill">Redis</span>
+
+<span class="skill-pill">React</span>
+
+<span class="skill-pill">Tailwind CSS</span>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Core Features</h2>
+
+<ul class="features">
+
+<li>Merchant Ledger Management</li>
+
+<li>Payout Request Processing</li>
+
+<li>Idempotent APIs</li>
+
+<li>Transaction Tracking</li>
+
+<li>Background Job Processing</li>
+
+<li>Retry Mechanisms</li>
+
+<li>Status Monitoring</li>
+
+<li>State Machine Validation</li>
+
+<li>Balance Protection</li>
+
+<li>Financial Workflow Automation</li>
+
+</ul>
+
+</section>
+
+<section>
+
+<h2>Engineering Decisions</h2>
+
+<ul class="features">
+
+<li>
+PostgreSQL was used for transactional consistency
+and ACID compliance.
+</li>
+
+<li>
+Redis was selected as a message broker for
+asynchronous task processing.
+</li>
+
+<li>
+Celery workers prevent long-running payout
+operations from blocking API responses.
+</li>
+
+<li>
+Idempotency keys prevent duplicate payout
+execution.
+</li>
+
+<li>
+Database transactions ensure balance integrity.
+</li>
+
+</ul>
+
+</section>
+
+<section>
+
+<h2>Engineering Challenges</h2>
+
+<ul class="features">
+
+<li>
+Preventing duplicate payout execution.
+</li>
+
+<li>
+Handling concurrent payout requests safely.
+</li>
+
+<li>
+Maintaining financial consistency during failures.
+</li>
+
+<li>
+Designing reliable retry workflows.
+</li>
+
+<li>
+Managing asynchronous task execution.
+</li>
+
+<li>
+Protecting merchant balances from race conditions.
+</li>
+
+</ul>
+
+</section>
+
+<section>
+
+<h2>Advanced Concepts Implemented</h2>
+
+<ul class="features">
+
+<li>Idempotency Keys</li>
+
+<li>Database Transactions</li>
+
+<li>Ledger-Based Accounting</li>
+
+<li>Background Workers</li>
+
+<li>Retry Backoff Strategies</li>
+
+<li>Concurrency Control</li>
+
+<li>State Machines</li>
+
+<li>Distributed Task Processing</li>
+
+</ul>
+
+</section>
+
+<section>
+
+<h2>Lessons Learned</h2>
+
+<ul class="features">
+
+<li>Django REST Framework</li>
+
+<li>PostgreSQL Data Modeling</li>
+
+<li>Celery Task Queues</li>
+
+<li>Redis Messaging Systems</li>
+
+<li>Financial Workflow Design</li>
+
+<li>Backend System Reliability</li>
+
+<li>Transaction Management</li>
+
+<li>Scalable API Architecture</li>
+
+</ul>
+
+</section>
+
+<section>
+
+<h2>Skills Demonstrated</h2>
+
+<div style="text-align:center;">
+
+<span class="skill-pill">Backend Development</span>
+
+<span class="skill-pill">REST API Design</span>
+
+<span class="skill-pill">Database Design</span>
+
+<span class="skill-pill">Distributed Systems</span>
+
+<span class="skill-pill">Financial Systems</span>
+
+<span class="skill-pill">Concurrency Control</span>
+
+<span class="skill-pill">System Reliability</span>
+
+<span class="skill-pill">Software Architecture</span>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Source Code</h2>
+
+<div style="text-align:center;">
+
+<a href="https://github.com/manoj-konireddy/playto-payout-engine"
+target="_blank"
+class="btn">
+
+View GitHub Repository
+
+</a>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>
+© 2026 Konireddy Manoj Kumar Reddy
+</p>
+
+</footer>
+
+</body>
+
+</html>

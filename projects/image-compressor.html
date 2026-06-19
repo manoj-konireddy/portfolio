@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AWS Image Compression Pipeline</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<nav>
+<div class="logo">KMKR</div>
+</nav>
+
+<section class="hero">
+<div class="hero-container">
+<div class="hero-content">
+
+<h1>AWS Image Compression Pipeline</h1>
+<h2>Serverless Image Optimization Platform</h2>
+
+<p class="hero-role">
+AWS Lambda • Amazon S3 • API Gateway • CloudFront • Python
+</p>
+
+<p>
+A production-style serverless application that automatically compresses images using AWS Lambda,
+stores optimized files in Amazon S3, and securely delivers downloads through Presigned URLs.
+</p>
+
+<div class="buttons">
+<a href="https://d36njv3benvlbt.cloudfront.net/" target="_blank" class="btn">Live Demo</a>
+<a href="https://github.com/manoj-konireddy/AWS-Image-Compression-Pipeline" target="_blank" class="btn">View GitHub</a>
+<button onclick="history.back()" class="btn secondary">Back To Portfolio</button>
+</div>
+
+</div>
+</div>
+</section>
+
+<section>
+<h2>Project Highlights</h2>
+<div class="project-overview">
+<h3>100% Serverless</h3>
+<p>Built entirely using AWS managed services with no servers to provision or maintain.</p>
+
+<h3>Event-Driven Processing</h3>
+<p>Image uploads automatically trigger AWS Lambda functions through S3 event notifications.</p>
+
+<h3>Secure Downloads</h3>
+<p>Compressed images are delivered using Presigned URLs without exposing storage buckets publicly.</p>
+</div>
+</section>
+
+<section>
+<h2>Project Overview</h2>
+<div class="project-overview">
+<h3>Automated Image Optimization</h3>
+<p>Users upload images through a responsive web application and receive optimized versions automatically.</p>
+
+<h3>Scalable Cloud Architecture</h3>
+<p>The solution leverages AWS services to process images efficiently while maintaining scalability and reliability.</p>
+
+<h3>Production Deployment</h3>
+<p>The application is deployed through Amazon CloudFront and demonstrates a real-world serverless workflow.</p>
+</div>
+</section>
+
+<section>
+<h2>Architecture</h2>
+<div class="project-overview architecture-section">
+
+<img
+src="../architecture/architecture-image.png"
+alt="AWS Image Compression Pipeline Architecture"
+class="architecture-image-large">
+<p>
+The workflow begins with image upload through the frontend. API Gateway invokes Lambda, images are stored in an S3 input bucket, processed automatically, saved to an output bucket, and securely delivered back to users.
+</p>
+</div>
+</section>
+
+<section>
+<h2>Technology Stack</h2>
+<ul class="features">
+<li>Amazon S3</li>
+<li>AWS Lambda</li>
+<li>Amazon API Gateway</li>
+<li>Amazon CloudFront</li>
+<li>Amazon CloudWatch</li>
+<li>AWS IAM</li>
+<li>Python</li>
+<li>Pillow (PIL)</li>
+</ul>
+</section>
+
+<section>
+<h2>Key Features</h2>
+<div class="project-overview">
+<h3>Automatic Compression</h3>
+<p>Images are compressed immediately after upload.</p>
+<h3>Side-by-Side Comparison</h3>
+<p>Users can compare original and compressed images along with file size information.</p>
+<h3>Cloud-Based Processing</h3>
+<p>All processing occurs within AWS without requiring local software installation.</p>
+</div>
+</section>
+
+<section>
+<h2>Project Workflow</h2>
+<div class="project-overview">
+<h3>Upload</h3>
+<p>User uploads an image from the browser.</p>
+<h3>Trigger</h3>
+<p>S3 upload automatically triggers a Lambda function.</p>
+<h3>Compression</h3>
+<p>Python and Pillow optimize the image and store the result.</p>
+<h3>Download</h3>
+<p>A secure Presigned URL is generated for download.</p>
+</div>
+</section>
+
+<section>
+<h2>Application Screenshots</h2>
+<section>
+
+<div class="project-overview">
+
+<h3 style="text-align:center;">
+
+Home Page
+
+</h3>
+
+<img
+src="../screenshots/home-page.png"
+alt="Home Page"
+class="project-screenshot">
+
+<p style="text-align:center;">
+
+Responsive web interface where users upload images
+for automatic compression and optimization.
+
+</p>
+
+<h3 style="text-align:center;">
+
+Upload Processing
+
+</h3>
+
+<img
+src="../screenshots/upload-success.png"
+alt="Upload Success"
+class="project-screenshot">
+
+<p style="text-align:center;">
+
+Successful image upload triggering the AWS
+serverless processing workflow.
+
+</p>
+
+<h3 style="text-align:center;">
+
+Compression Result
+
+</h3>
+
+<img
+src="../screenshots/compression-result.png"
+alt="Compression Result"
+class="project-screenshot">
+
+<p style="text-align:center;">
+
+Comparison between original and compressed images
+showing file size reduction and download capability.
+
+</p>
+
+</div>
+
+</section>
+
+<section>
+<h2>Challenges & Solutions</h2>
+<div class="project-overview">
+<h3>CORS Configuration</h3>
+<p>Resolved browser communication issues by configuring API Gateway and Lambda response headers.</p>
+<h3>Secure Access</h3>
+<p>Implemented Presigned URLs to securely download files without making buckets public.</p>
+<h3>CloudFront Deployment</h3>
+<p>Configured S3 hosting and CloudFront distribution to support global access.</p>
+</div>
+</section>
+
+<section>
+<h2>Results</h2>
+<div class="project-overview">
+<h3>Successful Compression Pipeline</h3>
+<p>The application compresses images while maintaining visual quality.</p>
+<h3>Storage Savings</h3>
+<p>Testing achieved significant file-size reduction and improved download performance.</p>
+<h3>Live AWS Deployment</h3>
+<p>The solution is publicly accessible through CloudFront.</p>
+</div>
+</section>
+
+<section>
+<h2>Skills Learned</h2>
+<div class="project-overview">
+<h3>Serverless Cloud Development</h3>
+<p>Hands-on experience with AWS Lambda, S3, API Gateway, CloudFront, IAM, CloudWatch, and event-driven architecture.</p>
+</div>
+</section>
+
+<section>
+<h2>Project Links</h2>
+<div class="buttons">
+<a href="https://d36njv3benvlbt.cloudfront.net/" target="_blank" class="btn">Live Demo</a>
+<a href="https://github.com/manoj-konireddy/AWS-Image-Compression-Pipeline" target="_blank" class="btn">GitHub Repository</a>
+</div>
+</section>
+
+<footer>
+<p>© 2026 Konireddy Manoj Kumar Reddy</p>
+</footer>
+
+</body>
+</html>

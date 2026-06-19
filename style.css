@@ -404,7 +404,7 @@ section h2{
 .project-card {
     background: white;
 
-    padding: 25px;
+    padding: 20px;
 
     border-radius: 20px;
 
@@ -442,7 +442,7 @@ section h2{
 .project-card h3 {
     color: #232f3e;
 
-    font-size: 1.8rem;
+    font-size: 1.6rem;
 
     margin-bottom: 15px;
 }
@@ -580,6 +580,25 @@ section h2{
     line-height:2;
 }
 
+.architecture-image{
+    display:block;
+    max-width:250px;
+    width:100%;
+    height:auto;
+    margin:0 auto;
+    border-radius:12px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.1);
+}
+
+.architecture-section{
+    text-align:center;
+}
+
+.architecture-section p{
+    max-width:900px;
+    margin:20px auto;
+}
+
 .project-overview{
     background:white;
 
@@ -657,6 +676,14 @@ section h2{
     margin-top:40px;
 }
 
+.project-screenshot{
+    display:block;
+    width:100%;
+    max-width:1000px;
+    margin:25px auto;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.15);
+}
 /* =========================================
    FOOTER
 ========================================= */

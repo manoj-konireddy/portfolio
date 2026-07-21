@@ -17,9 +17,13 @@ A modern, fully responsive portfolio website built and deployed on Amazon Web Se
 
 ## 🌐 Live Demo
 
-**Portfolio Website**
+### AWS CloudFront (Production)
 
 🔗 https://d3mwy50w6wapyd.cloudfront.net
+
+### GitHub Pages (Mirror)
+
+🔗 https://manoj-konireddy.github.io/portfolio/
 
 ---
 
@@ -137,6 +141,7 @@ Through this project, I gained hands-on experience in:
 
 - AWS Cloud Deployment
 - Serverless Architecture
+- GitHub Actions CI/CD
 - CloudFront CDN
 - Static Website Hosting
 - API Development
@@ -153,7 +158,6 @@ Through this project, I gained hands-on experience in:
 
 - Custom Domain Integration
 - SSL/TLS using AWS Certificate Manager (ACM)
-- CI/CD Pipeline with GitHub Actions
 - AWS CloudWatch Monitoring
 - Infrastructure as Code (Terraform / AWS CDK)
 

@@ -166,39 +166,23 @@ visualizations and supporting evidence.
 </section>
 
 <section>
+<h2>Architecture</h2>
 
-<h2>System Architecture</h2>
+<div class="project-overview architecture-section">
 
-<div class="architecture-box">
+<img
+src="../architecture/forward-deployed-architecture.png"
+alt="Forward Deployed Engineer Architecture"
+class="architecture-image-large gallery-image">
 
-SAP Order-to-Cash Dataset
-
-<br><br>↓<br><br>
-
-Data Ingestion Pipeline
-
-<br><br>↓<br><br>
-
-SQLite Fact Tables
-
-<br><br>↓<br><br>
-
-Knowledge Graph Engine
-
-<br><br>↓<br><br>
-
-FastAPI Backend
-
-<br><br>↓<br><br>
-
-OpenRouter LLM
-
-<br><br>↓<br><br>
-
-Interactive Web Interface
+<p>
+The application provides AI-powered question answering over SAP Order-to-Cash data.
+Users interact through a browser-based interface, while a FastAPI backend retrieves
+relevant graph data and combines it with LLM-powered intent analysis to generate
+grounded responses and interactive graph visualizations.
+</p>
 
 </div>
-
 </section>
 
 <section>
@@ -400,5 +384,34 @@ View GitHub Repository
 </footer>
 
 </body>
+
+<!-- ==========================================
+IMAGE VIEWER
+========================================== -->
+
+<div id="imageViewer" class="image-viewer">
+
+    <span class="viewer-close">&times;</span>
+
+    <button class="viewer-btn viewer-prev">
+        &#10094;
+    </button>
+
+    <img
+    id="viewerImage"
+    class="viewer-image"
+    alt="Preview">
+
+    <button class="viewer-btn viewer-next">
+        &#10095;
+    </button>
+
+    <div id="viewerCounter"
+    class="viewer-counter">
+    </div>
+
+</div>
+
+<script src="../gallery.js"></script>
 
 </html>

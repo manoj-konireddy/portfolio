@@ -71,9 +71,9 @@ stores optimized files in Amazon S3, and securely delivers downloads through Pre
 <div class="project-overview architecture-section">
 
 <img
-src="../architecture/architecture-image.png"
+src="../architecture/image-compression-architecture.png"
 alt="AWS Image Compression Pipeline Architecture"
-class="architecture-image-large">
+class="architecture-image-large gallery-image">
 <p>
 The workflow begins with image upload through the frontend. API Gateway invokes Lambda, images are stored in an S3 input bucket, processed automatically, saved to an output bucket, and securely delivered back to users.
 </p>
@@ -135,7 +135,7 @@ Home Page
 <img
 src="../screenshots/home-page.png"
 alt="Home Page"
-class="project-screenshot">
+class="project-screenshot gallery-image">
 
 <p style="text-align:center;">
 
@@ -153,7 +153,7 @@ Upload Processing
 <img
 src="../screenshots/upload-success.png"
 alt="Upload Success"
-class="project-screenshot">
+class="project-screenshot gallery-image">
 
 <p style="text-align:center;">
 
@@ -171,7 +171,7 @@ Compression Result
 <img
 src="../screenshots/compression-result.png"
 alt="Compression Result"
-class="project-screenshot">
+class="project-screenshot gallery-image">
 
 <p style="text-align:center;">
 
@@ -229,4 +229,34 @@ showing file size reduction and download capability.
 </footer>
 
 </body>
+
+<!-- ==========================================
+IMAGE VIEWER
+========================================== -->
+
+<div id="imageViewer" class="image-viewer">
+
+    <span class="viewer-close">&times;</span>
+
+    <button class="viewer-btn viewer-prev">
+        &#10094;
+    </button>
+
+    <img
+    id="viewerImage"
+    class="viewer-image"
+    alt="Preview">
+
+    <button class="viewer-btn viewer-next">
+        &#10095;
+    </button>
+
+    <div id="viewerCounter"
+    class="viewer-counter">
+    </div>
+
+</div>
+
+<script src="../gallery.js"></script>
+
 </html>

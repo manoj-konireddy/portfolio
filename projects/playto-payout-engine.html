@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>
-Play-to-Payout Engine | Konireddy Manoj Kumar Reddy
+Payout Management System | Konireddy Manoj Kumar Reddy
 </title>
 
 <link rel="stylesheet" href="../style.css">
@@ -26,7 +26,7 @@ Play-to-Payout Engine | Konireddy Manoj Kumar Reddy
 
         <div class="hero-content">
 
-            <h1>Play-to-Payout Engine</h1>
+            <h1>Payout Management System</h1>
 
             <h2>Merchant Payout Processing Platform</h2>
 
@@ -71,7 +71,7 @@ Play-to-Payout Engine | Konireddy Manoj Kumar Reddy
 
 <p>
 
-Play-to-Payout Engine is a backend-focused FinTech
+Payout Management System is a backend-focused FinTech
 platform designed to simulate how modern payment
 companies process merchant payouts.
 
@@ -169,36 +169,21 @@ and dashboards.
 </section>
 
 <section>
+<h2>Architecture</h2>
 
-<h2>System Architecture</h2>
+<div class="project-overview architecture-section">
 
-<div class="architecture-box">
+<img
+src="../architecture/payout-management-architecture.png"
+alt="Payout Management System Architecture"
+class="architecture-image-large gallery-image">
 
-Merchant Dashboard
-
-<br><br>↓<br><br>
-
-REST API
-
-<br><br>↓<br><br>
-
-Django Backend
-
-<br><br>↓<br><br>
-
-PostgreSQL Database
-
-<br><br>↓<br><br>
-
-Redis Queue
-
-<br><br>↓<br><br>
-
-Celery Workers
-
-<br><br>↓<br><br>
-
-Payout Processing Engine
+<p>
+The application enables merchants to manage payouts through a Django-based backend.
+Requests are validated, stored in PostgreSQL, processed asynchronously using Celery,
+and coordinated through Redis, providing reliable payout processing and real-time
+status tracking.
+</p>
 
 </div>
 
@@ -469,5 +454,34 @@ View GitHub Repository
 </footer>
 
 </body>
+
+<!-- ==========================================
+IMAGE VIEWER
+========================================== -->
+
+<div id="imageViewer" class="image-viewer">
+
+    <span class="viewer-close">&times;</span>
+
+    <button class="viewer-btn viewer-prev">
+        &#10094;
+    </button>
+
+    <img
+    id="viewerImage"
+    class="viewer-image"
+    alt="Preview">
+
+    <button class="viewer-btn viewer-next">
+        &#10095;
+    </button>
+
+    <div id="viewerCounter"
+    class="viewer-counter">
+    </div>
+
+</div>
+
+<script src="../gallery.js"></script>
 
 </html>

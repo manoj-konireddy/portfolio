@@ -1,101 +1,175 @@
-# AWS Portfolio Website
+# ☁️ AWS Portfolio Website
 
-## Overview
+<p align="center">
+  <img src="screenshots/portfolio-homepage.png" width="900">
+</p>
 
-A fully responsive personal portfolio website hosted on AWS. The project showcases my technical skills, certifications, projects, and cloud expertise while demonstrating serverless architecture using AWS services.
+![AWS](https://img.shields.io/badge/AWS-Cloud-orange)
+![Amazon S3](https://img.shields.io/badge/Amazon%20S3-Static%20Hosting-green)
+![CloudFront](https://img.shields.io/badge/CloudFront-CDN-blue)
+![Lambda](https://img.shields.io/badge/Lambda-Serverless-yellow)
+![API Gateway](https://img.shields.io/badge/API%20Gateway-REST%20API-red)
+![DynamoDB](https://img.shields.io/badge/DynamoDB-NoSQL-blueviolet)
 
-## Live Demo
+A modern, fully responsive portfolio website built and deployed on Amazon Web Services to showcase my projects, technical skills, certifications, and cloud expertise. The application demonstrates practical AWS cloud deployment, serverless architecture, responsive web development, and real-time visitor analytics.
 
-Portfolio Website:
+---
 
-https://d3mwy50w6wapyd.cloudfront.net
+## 🌐 Live Demo
 
-## Architecture
+**Portfolio Website**
 
-Browser
-↓
-CloudFront CDN
-↓
-Amazon S3 Static Website Hosting
-↓
-JavaScript Frontend
-↓
-API Gateway
-↓
-AWS Lambda
-↓
-Amazon DynamoDB
+🔗 https://d3mwy50w6wapyd.cloudfront.net
 
-## AWS Services Used
+---
 
-* Amazon S3
-* Amazon CloudFront
-* AWS Lambda
-* Amazon API Gateway
-* Amazon DynamoDB
-* AWS IAM
+## ✨ Highlights
 
-## Features
+- Responsive design for Desktop, Tablet, and Mobile
+- Professional project showcase
+- Individual project pages with architecture diagrams
+- Interactive image gallery with fullscreen viewer
+- Serverless real-time visitor analytics
+- Certifications section
+- Resume download
+- GitHub & LinkedIn integration
+- Modern and clean UI
 
-### Portfolio Features
+---
 
-* Responsive design for desktop, tablet, and mobile devices
-* Professional project showcase
-* Certifications section
-* Resume download
-* GitHub integration
-* LinkedIn integration
-* Contact form integration
-* Modern UI with AWS-inspired theme
+## ☁️ AWS Architecture
 
-### Serverless Features
+<p align="center">
+  <img src="architecture/portfolio-architecture.png" width="900">
+</p>
 
-* Real-time visitor counter
-* Unique visitor tracking
-* DynamoDB data storage
-* REST API integration
-* Lambda-based backend processing
-* CloudFront content delivery
+---
 
-## Project Structure
+## 🛠️ Technology Stack
 
+### Frontend
+
+- HTML5
+- CSS3
+- JavaScript
+- Responsive Web Design
+
+### AWS Cloud
+
+- Amazon S3
+- Amazon CloudFront
+- AWS Lambda
+- Amazon API Gateway
+- Amazon DynamoDB
+- AWS IAM
+
+### Development Tools
+
+- Git
+- GitHub
+- VS Code
+
+---
+
+## 📂 Featured Projects
+
+- AWS Portfolio Website
+- AWS File Sharing Platform
+- AWS Image Compressor Pipeline
+- Web Security Analyzer
+- Forward Deployed Engineer
+- Play-to-Payout Engine
+
+---
+
+## 📁 Project Structure
+
+```
 aws-portfolio/
-
+│
 ├── index.html
 ├── style.css
+├── gallery.js
+├── architecture/
+├── certificates/
 ├── images/
 ├── projects/
-├── certificates/
+├── screenshots/
 └── README.md
+```
 
-## Learning Outcomes
+---
 
-Through this project I learned:
+## 🚀 Features
 
-* AWS Serverless Architecture
-* CloudFront CDN Configuration
-* Amazon S3 Static Website Hosting
-* AWS Lambda Development
-* API Gateway Integration
-* DynamoDB Operations
-* IAM Roles and Permissions
-* Responsive Web Design
-* Frontend and Backend Integration
-* Cloud Application Deployment
+### Portfolio
 
-## Future Enhancements
+- Professional landing page
+- Responsive navigation
+- Skills section
+- Certifications
+- Contact section
+- Resume download
 
-* AWS Image Processing Pipeline
-* AWS Three-Tier Web Application
-* Custom Domain Integration
-* Additional Cloud Projects
+### Projects
 
-## Author
+- Dedicated project pages
+- Architecture diagrams
+- Technology stack
+- Key features
+- Challenges & solutions
+- Live demo links
+- GitHub repository links
 
-Manoj Kumar Reddy Konireddy
+### Visitor Analytics
 
-LinkedIn:
-https://www.linkedin.com/in/manoj-konireddy
+- Real-time page view counter
+- Unique visitor tracking
+- REST API integration
+- Serverless backend powered by AWS Lambda
+- Visitor statistics stored in Amazon DynamoDB
 
-GitHub:
-https://github.com/manoj-konireddy
+---
+
+## 📚 Learning Outcomes
+
+Through this project, I gained hands-on experience in:
+
+- AWS Cloud Deployment
+- Serverless Architecture
+- CloudFront CDN
+- Static Website Hosting
+- API Development
+- AWS Lambda
+- DynamoDB
+- IAM
+- Responsive Web Design
+- Frontend Development
+- Cloud Integration
+
+---
+
+## 🔮 Future Improvements
+
+- Custom Domain Integration
+- SSL/TLS using AWS Certificate Manager (ACM)
+- CI/CD Pipeline with GitHub Actions
+- AWS CloudWatch Monitoring
+- Infrastructure as Code (Terraform / AWS CDK)
+
+---
+
+## 👨‍💻 Author
+
+**Konireddy Manoj Kumar Reddy**
+
+- GitHub: https://github.com/manoj-konireddy
+- LinkedIn: https://www.linkedin.com/in/manoj-konireddy
+
+---
+
+## ⭐ Support
+
+If you found this project helpful, please consider giving it a ⭐ on GitHub.
+
+It helps others discover the project and motivates me to continue building cloud-based applications.

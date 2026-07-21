@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Web Security Analyzer</title>
+
+<link rel="stylesheet" href="../style.css">
+
+</head>
+
+<body>
+
+<nav>
+
+<div class="logo">
+KMKR
+</div>
+
+</nav>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="hero-container">
+
+<div class="hero-content">
+
+<h1>Web Security Analyzer</h1>
+
+<h2>Production-Ready Website Security Assessment Platform</h2>
+
+<p class="hero-role">
+
+Python • Flask • AWS EC2 • CloudFront • Nginx • Gunicorn
+
+</p>
+
+<p>
+
+A production-ready website security assessment platform that performs
+automated security analysis of websites by inspecting HTTP security
+headers, SSL/TLS certificates, cookies, HTTP methods, forms,
+robots.txt, and security.txt. The application generates comprehensive
+security reports with risk scoring and actionable recommendations while
+being securely deployed on AWS.
+
+</p>
+
+<div class="buttons">
+
+<a href="https://d1jbr2kt5i8apn.cloudfront.net"
+target="_blank"
+class="btn">
+
+Live Demo
+
+</a>
+
+<a href="https://github.com/manoj-konireddy/Web-Security-Analyzer"
+target="_blank"
+class="btn">
+
+View GitHub
+
+</a>
+
+<button onclick="history.back()"
+class="btn secondary">
+
+Back To Portfolio
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- SECURITY HIGHLIGHTS -->
+
+<section>
+
+<h2>Project Highlights</h2>
+
+<div class="security-highlights">
+
+<div class="security-card">
+
+<div class="security-icon">🛡</div>
+
+<h3>Security Assessment</h3>
+
+<p>
+
+Performs automated security assessments by analyzing
+multiple security configurations of websites.
+
+</p>
+
+</div>
+
+<div class="security-card">
+
+<div class="security-icon">🔒</div>
+
+<h3>SSL & Header Analysis</h3>
+
+<p>
+
+Validates SSL certificates, HTTP security headers,
+cookies, and supported HTTP methods.
+
+</p>
+
+</div>
+
+<div class="security-card">
+
+<div class="security-icon">📄</div>
+
+<h3>Professional Reports</h3>
+
+<p>
+
+Generates downloadable PDF and JSON reports containing
+security findings and recommendations.
+
+</p>
+
+</div>
+
+<div class="security-card">
+
+<div class="security-icon">☁</div>
+
+<h3>AWS Deployment</h3>
+
+<p>
+
+Securely deployed on AWS using EC2, CloudFront,
+Nginx, and Gunicorn.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ABOUT PROJECT -->
+
+<section>
+
+<h2>About the Project</h2>
+
+<div class="project-overview">
+
+<h3>Problem Statement</h3>
+
+<p>
+
+Many websites unintentionally expose security weaknesses such as missing
+HTTP security headers, weak SSL configurations, insecure cookies,
+enabled HTTP methods, or absent security policies. Identifying these
+issues manually requires significant time and technical expertise.
+
+</p>
+
+<h3>Solution</h3>
+
+<p>
+
+The Web Security Analyzer automates the security assessment process by
+performing multiple website security checks and presenting the findings
+through an intuitive dashboard with risk scoring and downloadable
+security reports.
+
+</p>
+
+<h3>Real-World Application</h3>
+
+<p>
+
+Developers, security engineers, students, and website owners can use the
+application to quickly evaluate website security posture, identify
+misconfigurations, and follow recommendations to strengthen their web
+applications.
+
+</p>
+
+</div>
+
+</section>
+
+<!-- ==========================================
+ARCHITECTURE
+========================================== -->
+
+<section>
+
+<h2>Architecture</h2>
+
+<div class="project-overview architecture-section">
+
+<img
+src="../architecture/web-security-architecture.png"
+alt="Web Security Analyzer Architecture"
+class="architecture-image-large gallery-image">
+
+<p>
+
+The application is deployed on AWS using Amazon CloudFront, Amazon EC2,
+Nginx, Gunicorn, and Flask. User requests are securely routed to the
+backend where multiple security modules inspect the target website.
+Results are processed by the security engine, an overall risk score is
+calculated, and comprehensive PDF and JSON reports are generated for
+download.
+
+</p>
+
+</div>
+
+</section>
+
+<!-- ==========================================
+SECURITY SCAN MODULES
+========================================== -->
+
+<section>
+
+<h2>Security Scan Modules</h2>
+
+<div class="scan-grid">
+
+<div class="scan-card">
+
+<h3>🌐 Website Information</h3>
+
+<p>
+
+Collects server information, response time,
+content type, and general website metadata.
+
+</p>
+
+</div>
+
+<div class="scan-card">
+
+<h3>🛡 HTTP Security Headers</h3>
+
+<p>
+
+Checks important security headers including
+HSTS, CSP, X-Frame-Options,
+Content-Type Options and more.
+
+</p>
+
+</div>
+
+<div class="scan-card">
+
+<h3>🔒 SSL / TLS Analysis</h3>
+
+<p>
+
+Validates SSL certificates, expiration,
+issuer, encryption protocol and certificate
+security.
+
+</p>
+
+</div>
+
+<div class="scan-card">
+
+<h3>🍪 Cookie Analysis</h3>
+
+<p>
+
+Analyzes Secure, HttpOnly and SameSite
+cookie attributes to identify insecure
+cookies.
+
+</p>
+
+</div>
+
+<div class="scan-card">
+
+<h3>⚡ HTTP Methods</h3>
+
+<p>
+
+Detects enabled HTTP methods and identifies
+potentially risky methods exposed by the
+server.
+
+</p>
+
+</div>
+
+<div class="scan-card">
+
+<h3>📝 Forms Detection</h3>
+
+<p>
+
+Scans webpages for HTML forms that may
+collect sensitive information.
+
+</p>
+
+</div>
+
+<div class="scan-card">
+
+<h3>🤖 robots.txt</h3>
+
+<p>
+
+Checks whether robots.txt exists and verifies
+its accessibility.
+
+</p>
+
+</div>
+
+<div class="scan-card">
+
+<h3>📄 security.txt</h3>
+
+<p>
+
+Verifies implementation of security.txt
+to help responsible vulnerability disclosure.
+
+</p>
+
+</div>
+
+<div class="scan-card">
+
+<h3>📊 Risk Scoring</h3>
+
+<p>
+
+Calculates an overall website security score
+and provides recommendations for improving
+security posture.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ==========================================
+TECHNOLOGY STACK
+========================================== -->
+
+<section>
+
+<h2>Technology Stack</h2>
+
+<div class="tech-stack-grid">
+
+<div class="tech-category">
+
+<h3>Frontend</h3>
+
+<ul>
+
+<li>HTML5</li>
+<li>CSS3</li>
+<li>JavaScript</li>
+
+</ul>
+
+</div>
+
+<div class="tech-category">
+
+<h3>Backend</h3>
+
+<ul>
+
+<li>Python</li>
+<li>Flask</li>
+
+</ul>
+
+</div>
+
+<div class="tech-category">
+
+<h3>Security Libraries</h3>
+
+<ul>
+
+<li>Requests</li>
+<li>BeautifulSoup</li>
+<li>SSL</li>
+<li>Socket</li>
+
+</ul>
+
+</div>
+
+<div class="tech-category">
+
+<h3>AWS Cloud</h3>
+
+<ul>
+
+<li>Amazon EC2</li>
+<li>Amazon CloudFront</li>
+
+</ul>
+
+</div>
+
+<div class="tech-category">
+
+<h3>Deployment</h3>
+
+<ul>
+
+<li>Nginx</li>
+<li>Gunicorn</li>
+<li>Linux</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ==========================================
+APPLICATION WORKFLOW
+========================================== -->
+
+<section>
+
+<h2>Application Workflow</h2>
+
+<div class="project-overview">
+
+<div class="workflow-steps">
+
+<div class="workflow-step">
+<div class="step-number">1</div>
+<h3>Enter Website URL</h3>
+<p>User submits the target website URL for analysis.</p>
+</div>
+
+<div class="workflow-step">
+<div class="step-number">2</div>
+<h3>Request Validation</h3>
+<p>Flask validates the URL and initializes the security scan.</p>
+</div>
+
+<div class="workflow-step">
+<div class="step-number">3</div>
+<h3>Security Analysis</h3>
+<p>Multiple security modules inspect headers, SSL, cookies, HTTP methods, forms, robots.txt and security.txt.</p>
+</div>
+
+<div class="workflow-step">
+<div class="step-number">4</div>
+<h3>Risk Calculation</h3>
+<p>The security engine calculates an overall security score and risk level.</p>
+</div>
+
+<div class="workflow-step">
+<div class="step-number">5</div>
+<h3>Generate Reports</h3>
+<p>Interactive dashboard along with PDF and JSON reports are generated.</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ==========================================
+APPLICATION SCREENSHOTS
+========================================== -->
+
+<section>
+
+<h2>Application Screenshots</h2>
+
+<div class="project-overview">
+
+<h3 style="text-align:center;">Home Page</h3>
+
+<img
+src="../screenshots/home-page-cyber.png"
+alt="Home Page"
+class="project-screenshot gallery-image">
+
+<p style="text-align:center;">
+
+Responsive landing page allowing users to submit a website URL
+for automated security assessment.
+
+</p>
+
+<h3 style="text-align:center;">Security Analysis Dashboard</h3>
+
+<img
+src="../screenshots/scan-results.png"
+alt="Results"
+class="project-screenshot gallery-image">
+
+<p style="text-align:center;">
+
+Comprehensive security dashboard displaying website information,
+risk score, security findings and recommendations.
+
+</p>
+
+</div>
+
+</section>
+
+<!-- ==========================================
+SECURITY REPORTS
+========================================== -->
+
+<section>
+
+<h2>Generated Security Reports</h2>
+
+<div class="reports-grid">
+
+<div class="report-card">
+
+<h3>PDF Security Report</h3>
+
+<img
+src="../screenshots/pdf-results.png"
+alt="PDF Report"
+class="project-screenshot gallery-image">
+
+<p>
+
+Generates a professional multi-page PDF report summarizing
+website security posture, overall score, detailed findings,
+and actionable recommendations.
+
+</p>
+
+</div>
+
+<div class="report-card">
+
+<h3>JSON Export</h3>
+
+<img
+src="../screenshots/JSON-results.png"
+alt="PDF Report"
+class="project-screenshot gallery-image">
+
+<p>
+
+<p>
+
+Exports all security scan results in structured JSON format,
+making it suitable for further automation, integration,
+or external analysis.
+
+</p>
+
+<ul>
+
+<li>Structured Output</li>
+<li>Machine Readable</li>
+<li>Easy Integration</li>
+<li>Complete Scan Results</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ==========================================
+CHALLENGES
+========================================== -->
+
+<section>
+
+<h2>Challenges & Solutions</h2>
+
+<div class="project-overview">
+
+<h3>Website Compatibility</h3>
+
+<p>
+
+Different websites respond differently to automated requests.
+The application was designed to gracefully handle redirects,
+timeouts, unavailable resources, and varying server
+configurations.
+
+</p>
+
+<h3>SSL Certificate Validation</h3>
+
+<p>
+
+Implemented secure SSL certificate inspection while supporting
+a wide range of HTTPS configurations and certificate authorities.
+
+</p>
+
+<h3>AWS Deployment</h3>
+
+<p>
+
+Configured Flask with Gunicorn behind Nginx on Amazon EC2 and
+distributed the application globally using Amazon CloudFront.
+
+</p>
+
+</div>
+
+</section>
+
+<!-- ==========================================
+RESULTS
+========================================== -->
+
+<section>
+
+<h2>Results & Impact</h2>
+
+<div class="security-highlights">
+
+<div class="security-card">
+
+<div class="security-icon">🌐</div>
+
+<h3>Website Analysis</h3>
+
+<p>
+
+Successfully analyzes publicly accessible websites and
+identifies common security weaknesses.
+
+</p>
+
+</div>
+
+<div class="security-card">
+
+<div class="security-icon">📊</div>
+
+<h3>Risk Assessment</h3>
+
+<p>
+
+Calculates security scores and prioritizes vulnerabilities
+based on observed security posture.
+
+</p>
+
+</div>
+
+<div class="security-card">
+
+<div class="security-icon">📄</div>
+
+<h3>Professional Reports</h3>
+
+<p>
+
+Generates downloadable PDF and JSON reports for
+documentation and future analysis.
+
+</p>
+
+</div>
+
+<div class="security-card">
+
+<div class="security-icon">☁</div>
+
+<h3>AWS Hosted</h3>
+
+<p>
+
+Production deployment using AWS EC2 and CloudFront
+providing secure and reliable access.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ==========================================
+SKILLS LEARNED
+========================================== -->
+
+<section>
+
+<h2>Skills Learned</h2>
+
+<div class="tech-stack-grid">
+
+<div class="tech-category">
+
+<h3>Cyber Security</h3>
+
+<ul>
+
+<li>HTTP Security Headers</li>
+<li>SSL/TLS</li>
+<li>Cookie Security</li>
+<li>Risk Assessment</li>
+
+</ul>
+
+</div>
+
+<div class="tech-category">
+
+<h3>Backend Development</h3>
+
+<ul>
+
+<li>Python</li>
+<li>Flask</li>
+<li>REST APIs</li>
+
+</ul>
+
+</div>
+
+<div class="tech-category">
+
+<h3>Cloud Deployment</h3>
+
+<ul>
+
+<li>AWS EC2</li>
+<li>CloudFront</li>
+<li>Nginx</li>
+<li>Gunicorn</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ==========================================
+PROJECT LINKS
+========================================== -->
+
+<section>
+
+<h2>Project Links</h2>
+
+<div class="buttons">
+
+<a
+href="https://d1jbr2kt5i8apn.cloudfront.net"
+target="_blank"
+class="btn">
+
+Live Demo
+
+</a>
+
+<a
+href="https://github.com/manoj-konireddy/Web-Security-Analyzer"
+target="_blank"
+class="btn">
+
+GitHub Repository
+
+</a>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>
+
+© 2026 Konireddy Manoj Kumar Reddy
+
+</p>
+
+</footer>
+
+</body>
+
+<!-- ==========================================
+IMAGE VIEWER
+========================================== -->
+
+<div id="imageViewer" class="image-viewer">
+
+    <span class="viewer-close">&times;</span>
+
+    <button class="viewer-btn viewer-prev">
+        &#10094;
+    </button>
+
+    <img
+    id="viewerImage"
+    class="viewer-image"
+    alt="Preview">
+
+    <button class="viewer-btn viewer-next">
+        &#10095;
+    </button>
+
+    <div id="viewerCounter"
+    class="viewer-counter">
+    </div>
+
+</div>
+
+<script src="../gallery.js"></script>
+
+</html>

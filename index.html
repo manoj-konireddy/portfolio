@@ -10,26 +10,105 @@
 </head>
 <body>
 
-<nav>
+<!-- =========================
+        DESKTOP NAVBAR
+========================= -->
+
+<nav class="desktop-nav">
 
     <div class="logo">
         KMKR
     </div>
 
-    <div class="menu-toggle" id="menu-toggle">
-        ☰
-    </div>
+    <ul class="desktop-links">
 
-    <ul id="nav-links">
         <li><a href="#about">About</a></li>
+
         <li><a href="#skills">Skills</a></li>
+
         <li><a href="#certifications">Certifications</a></li>
+
         <li><a href="#projects">Projects</a></li>
+
         <li><a href="#contact">Contact</a></li>
+
     </ul>
 
+</nav>
+
+
+<!-- =========================
+        MOBILE NAVBAR
+========================= -->
+
+<nav class="mobile-nav">
+
+    <div class="logo">
+
+        KMKR
+
+    </div>
+
+    <button class="menu-btn" id="menuBtn">
+
+        ☰
+
+    </button>
 
 </nav>
+
+
+<!-- =========================
+        MOBILE DRAWER
+========================= -->
+
+<div class="mobile-overlay" id="mobileOverlay"></div>
+
+<div class="mobile-drawer" id="mobileDrawer">
+
+    <div class="drawer-header">
+
+        <h2>
+
+            Menu
+
+        </h2>
+
+        <button id="closeDrawer">
+
+            ✕
+
+        </button>
+
+    </div>
+
+    <a href="#about">About</a>
+
+    <a href="#skills">Skills</a>
+
+    <a href="#certifications">Certifications</a>
+
+    <a href="#projects">Projects</a>
+
+    <a href="#contact">Contact</a>
+
+    <hr>
+
+    <a href="https://github.com/manoj-konireddy"
+       target="_blank">
+
+        GitHub
+
+    </a>
+
+    <a href="https://www.linkedin.com/in/manoj-konireddy/"
+       target="_blank">
+
+        LinkedIn
+
+    </a>
+
+</div>
 
 <section class="hero">
 
@@ -131,47 +210,85 @@ as a technology professional.
 
 <div class="skills-grid">
 
-<div class="card">
+    <!-- Frontend -->
 
-<h3>Programming</h3>
+    <div class="card">
 
-<p>Python</p>
-<p>SQL</p>
+        <h3>Frontend</h3>
 
-</div>
+        <p>HTML</p>
+        <p>CSS</p>
+        <p>JavaScript</p>
 
-<div class="card">
+    </div>
 
-<h3>Web Development</h3>
+    <!-- Backend -->
 
-<p>HTML</p>
-<p>CSS</p>
-<p>JavaScript</p>
+    <div class="card">
 
-</div>
+        <h3>Backend</h3>
 
-<div class="card">
+        <p>Python</p>
+        <p>FastAPI</p>
+        <p>Flask</p>
+        <p>Django</p>
 
-<h3>Cloud</h3>
+    </div>
 
-<p>AWS</p>
-<p>S3</p>
-<p>Lambda</p>
-<p>CloudFront</p>
-<p>DynamoDB</p>
+    <!-- AWS Cloud -->
 
-</div>
+    <div class="card">
 
-<div class="card">
+        <h3>AWS Cloud</h3>
 
-<h3>Tools</h3>
+        <p>Amazon EC2</p>
+        <p>Amazon RDS</p>
+        <p>Amazon S3</p>
+        <p>AWS Lambda</p>
+        <p>Amazon DynamoDB</p>
+        <p>Amazon CloudFront</p>
 
-<p>Git</p>
-<p>GitHub</p>
-<p>Linux</p>
-<p>VS Code</p>
+    </div>
 
-</div>
+    <!-- Database & Deployment -->
+
+    <div class="card">
+
+        <h3>Database & Deployment</h3>
+
+        <p>SQL</p>
+        <p>PostgreSQL</p>
+        <p>SQLite</p>
+        <p>Nginx</p>
+        <p>Gunicorn</p>
+
+    </div>
+
+    <!-- Security -->
+
+    <div class="card">
+
+        <h3>Security</h3>
+
+        <p>HTTP Security Headers</p>
+        <p>SSL/TLS</p>
+        <p>Cookie Analysis</p>
+        <p>Website Security</p>
+
+    </div>
+
+    <!-- Tools -->
+
+    <div class="card">
+
+        <h3>Technologies & Tools</h3>
+
+        <p>Git</p>
+        <p>GitHub</p>
+        <p>VS Code</p>
+        <p>Linux</p>
+
+    </div>
 
 </div>
 
@@ -182,6 +299,31 @@ as a technology professional.
 <h2>Featured Certifications</h2>
 
 <div class="cert-grid">
+
+<!-- AWS Training & Certification -->
+
+<div class="cert-card">
+
+<img src="images/aws-cloud-training.png"
+alt="AWS Cloud Practitioner">
+
+<h3>
+AWS Cloud Practitioner Essentials
+</h3>
+
+<p>
+Official AWS Training & Certification
+</p>
+
+<a href="images/aws-cloud-training.png"
+target="_blank"
+class="cert-btn">
+
+View Certificate
+
+</a>
+
+</div>
 
 <!-- AWS -->
 
@@ -358,31 +500,6 @@ View Certificate
 
 </div>
 
-<!-- AI Agent Hackathon -->
-
-<div class="cert-card">
-
-<img src="images/ai-agent.png"
-alt="AI Agent Hackathon">
-
-<h3>
-AI Agent Hackathon
-</h3>
-
-<p>
-Product Space
-</p>
-
-<a href="images/ai-agent.png"
-target="_blank"
-class="cert-btn">
-
-View Certificate
-
-</a>
-
-</div>
-
 </div>
 
 <div style="text-align:center; margin-top:40px;">
@@ -404,23 +521,24 @@ View All Certifications
 
 <div class="project-grid">
 
-<!-- Project 1 -->
+<!-- Project 3 -->
 
 <div class="project-card">
 
 <div>
 
-<div class="project-type">☁ Cloud Project</div>
+<div class="project-type">☁ AWS Portfolio</div>
 
-<h3>AWS Serverless Visitor Counter</h3>
+<h3>AWS Portfolio Website</h3>
 
 <p>
-Serverless visitor tracking application built using
-AWS S3, CloudFront, Lambda, API Gateway and DynamoDB.
+Personal portfolio website designed and deployed on AWS using
+Amazon S3, CloudFront, API Gateway, Lambda and DynamoDB to
+showcase projects, skills and certifications.
 </p>
 
 <div class="project-tech">
-AWS • Lambda • DynamoDB • API Gateway • CloudFront
+AWS • S3 • CloudFront • Lambda • API Gateway • DynamoDB
 </div>
 
 </div>
@@ -431,7 +549,7 @@ AWS • Lambda • DynamoDB • API Gateway • CloudFront
 
 <div class="project-buttons">
 
-<a href="projects/visitor-counter.html"
+<a href="projects/portfolio-website.html"
 class="project-btn">
 Details
 </a>
@@ -440,7 +558,7 @@ Details
 target="_blank"
 class="project-btn live-btn">
 
-Portfolio Count
+Portfolio Link
 
 </a>
 
@@ -451,6 +569,143 @@ Portfolio Count
 </div>
 
 <!-- Project 2 -->
+
+<div class="project-card">
+
+<div>
+
+<div class="project-type">
+🚀 Full Stack AWS Project
+</div>
+
+<h3>AWS File Sharing Platform</h3>
+
+<p>
+A secure cloud-based file sharing platform that enables authenticated users to upload, preview, download, restore, and share files. 
+Built with FastAPI and deployed on AWS using Amazon EC2, Amazon RDS, Amazon S3, CloudFront, and Nginx with HTTPS support.
+</p>
+
+<div class="project-tech">
+FastAPI • Python • AWS EC2 • Amazon RDS • Amazon S3 • CloudFront • Nginx
+</div>
+
+</div>
+
+<div>
+
+<br><br>
+
+<div class="project-buttons">
+
+<a href="projects/aws-file-sharing-platform.html"
+class="project-btn">
+Details
+</a>
+
+<a href="https://dz2uxbjrzh7nu.cloudfront.net"
+target="_blank"
+class="project-btn live-btn">
+🚀 Live Demo
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- Project 3 -->
+
+<div class="project-card">
+
+<div>
+
+<div class="project-type">☁ AWS Project</div>
+
+<h3>AWS Image Compression Pipeline</h3>
+
+<p>
+Serverless image compression platform built with AWS Lambda, S3, API Gateway and CloudFront.
+</p>
+
+<div class="project-tech">
+AWS Lambda • S3 • API Gateway • CloudFront
+</div>
+
+</div>
+
+<div>
+
+<br><br>
+
+<div class="project-buttons">
+
+<a href="projects/image-compressor.html"
+class="project-btn">
+Details
+</a>
+
+<a href="https://d36njv3benvlbt.cloudfront.net/"
+target="_blank"
+class="project-btn live-btn">
+🚀 Live Demo
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- Project 4 -->
+
+<div class="project-card">
+
+<div>
+
+<div class="project-type">🛡 Cyber Security Project</div>
+
+<h3>Web Security Analyzer</h3>
+
+<p>
+Production-ready website security assessment platform that analyzes
+HTTP security headers, SSL/TLS certificates, cookies, HTTP methods,
+robots.txt and security.txt with comprehensive risk analysis.
+</p>
+
+<div class="project-tech">
+Python • Flask • AWS EC2 • CloudFront • Nginx
+</div>
+
+</div>
+
+<div>
+
+<br><br>
+
+<div class="project-buttons">
+
+<a href="projects/web-security-analyzer.html"
+class="project-btn">
+Details
+</a>
+
+<a href="https://d1jbr2kt5i8apn.cloudfront.net"
+target="_blank"
+class="project-btn live-btn">
+
+Live Demo
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- Project 4 -->
 
 <div class="project-card">
 
@@ -496,15 +751,15 @@ class="project-btn live-btn">
 
 </div>
 
-<!-- Project 3 -->
+<!-- Project 5 -->
 
 <div class="project-card">
 
 <div>
 
-<div class="project-type">FinTech Backend Project</div>
+<div class="project-type">💳 Backend FinTech Project</div>
 
-<h3>Play-to-Payout Engine</h3>
+<h3>Payout Management System</h3>
 
 <p>
 Merchant payout processing platform featuring
@@ -541,50 +796,8 @@ class="project-btn live-btn">
 
 </div>
 
-<!-- Project 4 -->
 
-<div class="project-card">
-
-<div>
-
-<div class="project-type">☁ AWS Project</div>
-
-<h3>AWS Image Compression Pipeline</h3>
-
-<p>
-Serverless image compression platform built with AWS Lambda, S3, API Gateway and CloudFront.
-</p>
-
-<div class="project-tech">
-AWS Lambda • S3 • API Gateway • CloudFront
-</div>
-
-</div>
-
-<div>
-
-<br><br>
-
-<div class="project-buttons">
-
-<a href="projects/image-compressor.html"
-class="project-btn">
-Details
-</a>
-
-<a href="https://d36njv3benvlbt.cloudfront.net/"
-target="_blank"
-class="project-btn live-btn">
-🚀 Live Demo
-</a>
-
-</div>
-
-</div>
-
-</div>
-
-<!-- Project 5 -->
+<!-- Project 6 -->
 
 <div class="project-card">
 
@@ -737,15 +950,56 @@ fetch(url)
 
 <script>
 
-const menuToggle =
-document.getElementById("menu-toggle");
+const menuBtn = document.getElementById("menuBtn");
 
-const navLinks =
-document.getElementById("nav-links");
+const drawer = document.getElementById("mobileDrawer");
 
-menuToggle.addEventListener("click", () => {
+const overlay = document.getElementById("mobileOverlay");
 
-    navLinks.classList.toggle("active");
+const closeDrawer = document.getElementById("closeDrawer");
+
+
+// Open Drawer
+
+menuBtn.addEventListener("click", () => {
+
+    drawer.classList.add("open");
+
+    overlay.classList.add("show");
+
+    document.body.style.overflow = "hidden";
+
+});
+
+
+// Close Drawer
+
+function hideDrawer(){
+
+    drawer.classList.remove("open");
+
+    overlay.classList.remove("show");
+
+    document.body.style.overflow = "";
+
+}
+
+
+// Close Button
+
+closeDrawer.addEventListener("click", hideDrawer);
+
+
+// Click Outside
+
+overlay.addEventListener("click", hideDrawer);
+
+
+// Close After Clicking Menu Link
+
+document.querySelectorAll(".mobile-drawer a").forEach(link=>{
+
+    link.addEventListener("click", hideDrawer);
 
 });
 

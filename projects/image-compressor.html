@@ -24,13 +24,14 @@ AWS Lambda • Amazon S3 • API Gateway • CloudFront • Python
 </p>
 
 <p>
-A production-style serverless application that automatically compresses images using AWS Lambda,
+A project-based serverless application that automatically compresses images using AWS Lambda,
 stores optimized files in Amazon S3, and securely delivers downloads through Presigned URLs.
 </p>
 
+<p class="project-note">Project source code and implementation details are available on GitHub. Live hosting is currently inactive.</p>
+
 <div class="buttons">
-<a href="https://d36njv3benvlbt.cloudfront.net/" target="_blank" class="btn">Live Demo</a>
-<a href="https://github.com/manoj-konireddy/AWS-Image-Compression-Pipeline" target="_blank" class="btn">View GitHub</a>
+<a href="https://github.com/manoj-konireddy/AWS-Image-Compression-Pipeline" target="_blank" rel="noopener" class="btn">GitHub Repository</a>
 <button onclick="history.back()" class="btn secondary">Back To Portfolio</button>
 </div>
 
@@ -61,8 +62,8 @@ stores optimized files in Amazon S3, and securely delivers downloads through Pre
 <h3>Scalable Cloud Architecture</h3>
 <p>The solution leverages AWS services to process images efficiently while maintaining scalability and reliability.</p>
 
-<h3>Production Deployment</h3>
-<p>The application is deployed through Amazon CloudFront and demonstrates a real-world serverless workflow.</p>
+<h3>Previous Deployment</h3>
+<p>The application was previously delivered through Amazon CloudFront. The AWS hosting environment is currently inactive; the source code and architecture remain available for review.</p>
 </div>
 </section>
 
@@ -191,7 +192,7 @@ showing file size reduction and download capability.
 <p>Resolved browser communication issues by configuring API Gateway and Lambda response headers.</p>
 <h3>Secure Access</h3>
 <p>Implemented Presigned URLs to securely download files without making buckets public.</p>
-<h3>CloudFront Deployment</h3>
+<h3>CloudFront Deployment (Previous)</h3>
 <p>Configured S3 hosting and CloudFront distribution to support global access.</p>
 </div>
 </section>
@@ -203,8 +204,8 @@ showing file size reduction and download capability.
 <p>The application compresses images while maintaining visual quality.</p>
 <h3>Storage Savings</h3>
 <p>Testing achieved significant file-size reduction and improved download performance.</p>
-<h3>Live AWS Deployment</h3>
-<p>The solution is publicly accessible through CloudFront.</p>
+<h3>Source Code Available</h3>
+<p>The source code and implementation details are available in the GitHub repository.</p>
 </div>
 </section>
 
@@ -217,10 +218,32 @@ showing file size reduction and download capability.
 </section>
 
 <section>
-<h2>Project Links</h2>
-<div class="buttons">
-<a href="https://d36njv3benvlbt.cloudfront.net/" target="_blank" class="btn">Live Demo</a>
-<a href="https://github.com/manoj-konireddy/AWS-Image-Compression-Pipeline" target="_blank" class="btn">GitHub Repository</a>
+
+<section>
+  <h2>My Contribution & Implementation</h2>
+  <div class="case-study-panel">
+    <p>I implemented the image-processing workflow using Python and an AWS Lambda function. The solution accepts uploaded image files, processes them with an image library, and writes optimized output to the designated storage location. The surrounding workflow connects upload events, processing, and output retrieval.</p>
+  </div>
+</section>
+
+<section>
+  <h2>Technical Architecture Walkthrough</h2>
+  <div class="case-study-panel">
+    <p>An image is uploaded to the input S3 bucket. The object-created event invokes the Lambda function, which validates and processes the image before saving the compressed result to the output bucket. API Gateway and CloudFront were part of the earlier access and delivery design. The AWS resources are no longer hosted, but the implementation and architecture remain documented in the repository.</p>
+  </div>
+</section>
+
+<section>
+  <h2>Development Decisions & Learning</h2>
+  <div class="case-study-panel">
+    <p>The event-driven approach avoids keeping an application server running for each image-processing request. The project helped me understand event notifications, Lambda execution, file validation, image transformation, storage permissions, and the importance of handling unsupported or invalid image inputs.</p>
+  </div>
+</section>
+
+<section>
+<h2>Source Code</h2>
+<div style="text-align:center;">
+<a href="https://github.com/manoj-konireddy/AWS-Image-Compression-Pipeline" target="_blank" rel="noopener" class="btn">View GitHub Repository</a>
 </div>
 </section>
 

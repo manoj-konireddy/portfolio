@@ -32,7 +32,7 @@ KMKR
 
 <h1>Web Security Analyzer</h1>
 
-<h2>Production-Ready Website Security Assessment Platform</h2>
+<h2>Website Security Assessment Application</h2>
 
 <p class="hero-role">
 
@@ -42,30 +42,24 @@ Python • Flask • AWS EC2 • CloudFront • Nginx • Gunicorn
 
 <p>
 
-A production-ready website security assessment platform that performs
+A website security assessment application that performs
 automated security analysis of websites by inspecting HTTP security
 headers, SSL/TLS certificates, cookies, HTTP methods, forms,
 robots.txt, and security.txt. The application generates comprehensive
 security reports with risk scoring and actionable recommendations while
-being securely deployed on AWS.
+using a deployment architecture that previously used AWS services.
 
 </p>
 
+<p class="project-note">Project source code and implementation details are available on GitHub. Live hosting is currently inactive.</p>
+
 <div class="buttons">
 
-<a href="https://d1jbr2kt5i8apn.cloudfront.net"
-target="_blank"
-class="btn">
-
-Live Demo
-
-</a>
-
 <a href="https://github.com/manoj-konireddy/Web-Security-Analyzer"
-target="_blank"
+target="_blank" rel="noopener"
 class="btn">
 
-View GitHub
+GitHub Repository
 
 </a>
 
@@ -145,7 +139,7 @@ security findings and recommendations.
 
 <p>
 
-Securely deployed on AWS using EC2, CloudFront,
+Previously deployed using AWS EC2, CloudFront,
 Nginx, and Gunicorn.
 
 </p>
@@ -218,7 +212,7 @@ class="architecture-image-large gallery-image">
 
 <p>
 
-The application is deployed on AWS using Amazon CloudFront, Amazon EC2,
+The application was previously deployed on AWS using Amazon CloudFront and Amazon EC2,
 Nginx, Gunicorn, and Flask. User requests are securely routed to the
 backend where multiple security modules inspect the target website.
 Results are processed by the security engine, an overall risk score is
@@ -705,11 +699,11 @@ documentation and future analysis.
 
 <div class="security-icon">☁</div>
 
-<h3>AWS Hosted</h3>
+<h3>Previous AWS Deployment</h3>
 
 <p>
 
-Production deployment using AWS EC2 and CloudFront
+AWS EC2 and CloudFront deployment experience
 providing secure and reliable access.
 
 </p>
@@ -784,30 +778,33 @@ PROJECT LINKS
 
 <section>
 
-<h2>Project Links</h2>
 
-<div class="buttons">
+<section>
+  <h2>My Contribution & Implementation</h2>
+  <div class="case-study-panel">
+    <p>I built the Flask-based application and its website assessment workflow. The implementation gathers selected website and TLS information, checks security-related HTTP headers and cookies, inspects supported HTTP methods and common security files, and presents findings through a results interface with report export options.</p>
+  </div>
+</section>
 
-<a
-href="https://d1jbr2kt5i8apn.cloudfront.net"
-target="_blank"
-class="btn">
+<section>
+  <h2>Technical Architecture Walkthrough</h2>
+  <div class="case-study-panel">
+    <p>A user submits a website URL through the frontend. The Flask backend validates the input and coordinates the assessment modules. Each module gathers a specific set of observations, after which the application combines the findings into a risk-oriented results view and generates downloadable report formats. The previous AWS deployment is inactive; the project is available as source code on GitHub.</p>
+  </div>
+</section>
 
-Live Demo
+<section>
+  <h2>Development Decisions & Learning</h2>
+  <div class="case-study-panel">
+    <p>The assessment is organized into focused modules so that each check can be maintained and interpreted independently. This project improved my understanding of HTTP behavior, TLS certificate inspection, security headers, cookie attributes, input validation, report generation, and the limitations of automated website checks. Results should be treated as preliminary observations, not as a substitute for a professional penetration test.</p>
+  </div>
+</section>
 
-</a>
-
-<a
-href="https://github.com/manoj-konireddy/Web-Security-Analyzer"
-target="_blank"
-class="btn">
-
-GitHub Repository
-
-</a>
-
+<section>
+<h2>Source Code</h2>
+<div style="text-align:center;">
+<a href="https://github.com/manoj-konireddy/Web-Security-Analyzer" target="_blank" rel="noopener" class="btn">View GitHub Repository</a>
 </div>
-
 </section>
 
 <footer>

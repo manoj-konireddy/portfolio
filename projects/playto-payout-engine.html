@@ -41,10 +41,12 @@ Payout Management System | Konireddy Manoj Kumar Reddy
                 transaction management, and reliable payout workflows.
             </p>
 
+            <p class="project-note">Project source code and implementation details are available on GitHub. Live hosting is currently inactive.</p>
+
             <div class="buttons">
 
                 <a href="https://github.com/manoj-konireddy/playto-payout-engine"
-                target="_blank"
+                target="_blank" rel="noopener"
                 class="btn">
                     View GitHub
                 </a>
@@ -81,7 +83,7 @@ tracking while maintaining financial consistency and
 preventing duplicate payout execution.
 
 The architecture demonstrates many of the patterns
-used in production-grade financial systems.
+used in reliable financial systems.
 
 </p>
 
@@ -429,20 +431,33 @@ Protecting merchant balances from race conditions.
 
 <section>
 
+
+<section>
+  <h2>My Contribution & Implementation</h2>
+  <div class="case-study-panel">
+    <p>I developed the payout workflow and supporting backend components, including API-level request handling, merchant and payout records, ledger-oriented transaction updates, and asynchronous task processing. The project focuses on demonstrating how a payout request moves through validation, processing, and status updates.</p>
+  </div>
+</section>
+
+<section>
+  <h2>Technical Architecture Walkthrough</h2>
+  <div class="case-study-panel">
+    <p>The client submits a payout request to the Django REST API. The backend validates the request and persists the relevant records in PostgreSQL. Background work is queued through Redis and processed by Celery workers, while API endpoints expose payout status and transaction information to the client interface. The architecture separates request handling from longer-running payout processing.</p>
+  </div>
+</section>
+
+<section>
+  <h2>Development Decisions & Learning</h2>
+  <div class="case-study-panel">
+    <p>The project explores safeguards important to financial workflows, including idempotent request handling, consistent transaction updates, retry behavior, and asynchronous processing. It strengthened my understanding of REST API design, relational data modeling, background workers, queue-based processing, and reliable workflow design.</p>
+  </div>
+</section>
+
+<section>
 <h2>Source Code</h2>
-
 <div style="text-align:center;">
-
-<a href="https://github.com/manoj-konireddy/playto-payout-engine"
-target="_blank"
-class="btn">
-
-View GitHub Repository
-
-</a>
-
+<a href="https://github.com/manoj-konireddy/playto-payout-engine" target="_blank" rel="noopener" class="btn">View GitHub Repository</a>
 </div>
-
 </section>
 
 <footer>

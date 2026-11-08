@@ -24,15 +24,16 @@ FastAPI • Amazon EC2 • Amazon S3 • Amazon RDS • CloudFront • Nginx
 </p>
 
 <p>
-A production-ready full-stack file sharing platform built using FastAPI and Amazon Web Services. 
+A full-stack file sharing application built using FastAPI and Amazon Web Services. 
 Users can securely upload, preview, download, and manage public and private files. 
-Files are stored in Amazon S3, metadata is maintained in Amazon RDS, and the application is deployed 
-on Amazon EC2 with Nginx and CloudFront for secure, scalable delivery.
+Files were stored in Amazon S3, metadata was maintained in Amazon RDS, and the application was previously deployed 
+on Amazon EC2 with Nginx and CloudFront for content delivery. The AWS hosting environment is currently inactive.
 </p>
 
+<p class="project-note">Project source code and implementation details are available on GitHub. Live hosting is currently inactive.</p>
+
 <div class="buttons">
-<a href="https://dz2uxbjrzh7nu.cloudfront.net/" target="_blank" class="btn">Live Demo</a>
-<a href="https://github.com/manoj-konireddy/aws-file-sharing-platform" target="_blank" class="btn">View GitHub</a>
+<a href="https://github.com/manoj-konireddy/aws-file-sharing-platform" target="_blank" rel="noopener" class="btn">GitHub Repository</a>
 <button onclick="history.back()" class="btn secondary">Back To Portfolio</button>
 </div>
 
@@ -47,8 +48,8 @@ on Amazon EC2 with Nginx and CloudFront for secure, scalable delivery.
 
 <h3>Cloud Native Deployment</h3>
 <p>
-Deployed on Amazon EC2 with Nginx, Amazon CloudFront,
-Amazon S3 and Amazon RDS.
+Previously deployed on Amazon EC2 with Nginx, Amazon CloudFront,
+Amazon S3 and Amazon RDS. The hosting environment is currently inactive.
 </p>
 
 <h3>Secure File Management</h3>
@@ -57,7 +58,7 @@ Supports public and private file uploads with secure
 authentication and session management.
 </p>
 
-<h3>Production Ready Architecture</h3>
+<h3>Application Architecture</h3>
 <p>
 Designed using a three-tier cloud architecture with
 scalable storage and secure HTTPS delivery.
@@ -84,11 +85,11 @@ including filename, size, owner and visibility is stored
 inside Amazon RDS.
 </p>
 
-<h3>Production Deployment</h3>
+<h3>Previous Deployment</h3>
 <p>
-The application is hosted on Amazon EC2 using Nginx as
-a reverse proxy and delivered globally using Amazon
-CloudFront over HTTPS.
+The application was previously hosted on Amazon EC2 using Nginx as
+a reverse proxy, with Amazon CloudFront used for content delivery.
+The AWS hosting environment is currently inactive.
 </p>
 
 </div>
@@ -341,9 +342,9 @@ restrictions affecting secure uploads.
 
 <div class="project-overview">
 
-<h3>Production Ready Application</h3>
+<h3>Completed Project Implementation</h3>
 <p>
-Successfully deployed a secure cloud-native file
+Previously deployed a secure cloud-native file
 sharing platform on AWS.
 </p>
 
@@ -353,10 +354,9 @@ Implemented authentication, public/private uploads,
 preview, download and recycle bin functionality.
 </p>
 
-<h3>Live AWS Deployment</h3>
+<h3>Previous Cloud Deployment</h3>
 <p>
-The application is publicly accessible through
-Amazon CloudFront with HTTPS support.
+The application was previously deployed using Amazon CloudFront with HTTPS support. The deployment is currently inactive; the source code is available on GitHub.
 </p>
 
 </div>
@@ -374,7 +374,7 @@ Amazon CloudFront with HTTPS support.
 Hands-on experience with Amazon EC2, Amazon S3,
 Amazon RDS, Amazon CloudFront, IAM, Nginx,
 FastAPI, Linux server administration and
-production deployment on AWS.
+previous deployment on AWS.
 </p>
 
 </div>
@@ -382,28 +382,33 @@ production deployment on AWS.
 </section>
 
 <section>
-<h2>Project Links</h2>
 
-<div class="buttons">
+<section>
+  <h2>My Contribution & Implementation</h2>
+  <div class="case-study-panel">
+    <p>I developed the application flow across the user interface, FastAPI backend, database integration, and file-storage operations. The implementation covers account access, file metadata handling, upload and retrieval flows, and the distinction between public and private file access.</p>
+  </div>
+</section>
 
-<a href="https://dz2uxbjrzh7nu.cloudfront.net/"
-target="_blank"
-class="btn">
+<section>
+  <h2>Technical Architecture Walkthrough</h2>
+  <div class="case-study-panel">
+    <p>The browser-based interface sends authenticated requests to the FastAPI application. The backend validates requests, coordinates file operations with Amazon S3, and stores related file and user metadata in MySQL through the application data layer. During the earlier deployment, the application was hosted on EC2 behind Nginx, with CloudFront used for content delivery.</p>
+  </div>
+</section>
 
-Live Demo
+<section>
+  <h2>Development Decisions & Learning</h2>
+  <div class="case-study-panel">
+    <p>A key design consideration was separating file content from file metadata: object storage handles the files, while the relational database stores information needed to organize and retrieve them. The project strengthened my understanding of API design, authentication flows, database integration, object storage, and deployment configuration.</p>
+  </div>
+</section>
 
-</a>
-
-<a href="https://github.com/manoj-konireddy/aws-file-sharing-platform"
-target="_blank"
-class="btn">
-
-GitHub Repository
-
-</a>
-
+<section>
+<h2>Source Code</h2>
+<div style="text-align:center;">
+<a href="https://github.com/manoj-konireddy/aws-file-sharing-platform" target="_blank" rel="noopener" class="btn">View GitHub Repository</a>
 </div>
-
 </section>
 
 <footer>

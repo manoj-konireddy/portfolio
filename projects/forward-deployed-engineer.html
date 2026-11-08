@@ -40,10 +40,12 @@ Forward Deployed Engineer | Konireddy Manoj Kumar Reddy
                 knowledge graph and enables natural-language querying.
             </p>
 
+            <p class="project-note">Project source code and implementation details are available on GitHub. Live hosting is currently inactive.</p>
+
             <div class="buttons">
 
                 <a href="https://github.com/manoj-konireddy/Forward-Deployed-Engineer"
-                target="_blank"
+                target="_blank" rel="noopener"
                 class="btn">
                     View GitHub
                 </a>
@@ -359,20 +361,33 @@ Maintaining answer accuracy and traceability.
 
 <section>
 
+
+<section>
+  <h2>My Contribution & Implementation</h2>
+  <div class="case-study-panel">
+    <p>I developed the application flow that connects structured SAP Order-to-Cash sample data with natural-language question answering and graph exploration. The implementation includes data access through SQLite, API endpoints with FastAPI, retrieval and relationship logic, and a browser interface for questions and graph visualization.</p>
+  </div>
+</section>
+
+<section>
+  <h2>Technical Architecture Walkthrough</h2>
+  <div class="case-study-panel">
+    <p>The user submits a business question through the web interface. FastAPI receives the request, identifies the relevant retrieval path, and obtains supporting records and relationships from SQLite. The application can use an LLM through OpenRouter to help interpret the question and formulate a response grounded in retrieved context. The frontend presents the answer alongside graph-based relationships and traceable supporting information.</p>
+  </div>
+</section>
+
+<section>
+  <h2>Development Decisions & Learning</h2>
+  <div class="case-study-panel">
+    <p>A central design goal is to keep answers connected to retrieved business data instead of relying only on free-form model output. The project helped me explore API orchestration, structured data retrieval, entity relationships, graph visualization, prompt design, and validation of AI-generated responses.</p>
+  </div>
+</section>
+
+<section>
 <h2>Source Code</h2>
-
 <div style="text-align:center;">
-
-<a href="https://github.com/manoj-konireddy/Forward-Deployed-Engineer"
-target="_blank"
-class="btn">
-
-View GitHub Repository
-
-</a>
-
+<a href="https://github.com/manoj-konireddy/Forward-Deployed-Engineer" target="_blank" rel="noopener" class="btn">View GitHub Repository</a>
 </div>
-
 </section>
 
 <footer>
